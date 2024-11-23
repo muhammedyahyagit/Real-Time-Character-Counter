@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6f7aff, #a9aaff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Textarea Styling */
+#textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f7fd;
+    color: #333;
+    outline: none;
+    resize: none;
+    transition: border 0.3s ease-in-out;
+}
+
+#textarea:focus {
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+/* Counter Styling */
+.counter {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.counter p {
+    margin: 8px 0;
+}
+
+#total-characters,
+#remaining-counter {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    #textarea {
+        font-size: 15px;
+    }
+
+    .counter p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #textarea {
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .counter p {
+        font-size: 14px;
+    }
+}
